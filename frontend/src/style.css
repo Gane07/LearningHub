@@ -1,0 +1,57 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --primary-bg: #ffffff; /* White base */
+  --secondary-bg: #f5f7fa; /* Light gray-blue for sections */
+  --accent-color: #4a90e2; /* Soft blue for buttons and highlights */
+  --gradient-start: #e6f0fa; /* Light blue gradient start */
+  --gradient-end: #ffffff; /* White gradient end */
+  --text-dark: #333333; /* Dark text for contrast */
+  --text-accent: #2c5282; /* Darker blue for headings */
+  --shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif; /* Global font */
+}
+
+.section-bg {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow);
+}
+
+.carousel-section {
+  background-color: var(--secondary-bg);
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+  border-color: #357abd;
+}
+
+/* Paragraph and Heading Styles */
+h1, h2, h3 {
+  color: var(--text-accent);
+  text-align: center; /* Centered titles */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem; /* Slight padding for readability */
+}
